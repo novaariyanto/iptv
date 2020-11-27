@@ -1,27 +1,12 @@
 import { NextApiRequest, NextApiResponse } from "next"
 import { Channels } from "../../helper/db"
 
-const tokenHandler = ({ token }: { token: string }) => {
-  try {
-    const t = token.split(".")[1]
-    const r = Buffer.from(t, "base64").toString()
-    const base = JSON.parse(r).data.playlist_url
-    return base + "?" + token
-  } catch (e) {
-    console.log(e)
-    return ""
-  }
-}
-
 export default async (_: NextApiRequest, res: NextApiResponse) => {
-  const urls = Channels.map((channel) => {
-    const url = `https://www.vidio.com/live/${channel.id}/tokens?type=jwt`
-    return fetch(url, { method: "POST" })
-      .then((r) => r.json())
-      .then(tokenHandler)
-  })
   try {
-    const urlsData = await Promise.all(urls)
+    const urlsData = Channels.map(({ id }) => {
+      const baseUrl = process.env.BASE_URL || ""
+      return baseUrl + "/api/play?id=" + id
+    })
     res.write("#EXTM3U\n")
     urlsData.forEach((url, idx) => {
       const { image, group, name } = Channels[idx]
