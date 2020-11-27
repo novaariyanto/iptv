@@ -3,6 +3,7 @@ export interface IChannel {
   name: string
   image: string
   group: string
+  url?: string
 }
 
 export const Channels: IChannel[] = [
@@ -74,5 +75,65 @@ export const Channels: IChannel[] = [
     name: "rtv",
     group: "nasional",
     image: "https://i.postimg.cc/fb172pW8/rajawalitv.png",
+  },
+  {
+    id: 874,
+    name: "kompas tv",
+    group: "nasional",
+    image:
+      "https://www.useetv.com/assets/images/channel/logo_kompastv_small.png?v=2.0.0.13",
+  },
+  {
+    id: 6441,
+    name: "tvri",
+    group: "nasional",
+    image:
+      "https://www.useetv.com/assets/images/channel/logo_tvri_small1.png?v=2.0.0.13",
+  },
+  {
+    id: 0,
+    name: "jogja tv",
+    group: "local",
+    image:
+      "https://jogjatv.tv/wp-content/uploads/2015/08/LOGO-JOGJA-TV-NEW-pii-new1.png",
+    url: "https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8",
+  },
+  {
+    id: 0,
+    name: "CNBC Indonesia",
+    image: "https://upload.wikimedia.org/wikipedia/id/3/35/CNBC_Indonesia.png",
+    group: "OTHERS",
+    url:
+      "https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/chunklist.m3u8",
+  },
+  {
+    id: 0,
+    name: "CNN Indonesia",
+    image:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/CNN_Indonesia.svg/1200px-CNN_Indonesia.svg.png",
+    group: "OTHERS",
+    url: "https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/master.m3u8",
+  },
+  {
+    id: 0,
+    name: "ANIMAL PLANET HD",
+    image: "",
+    group: "OTHERS",
+    url: "http://119.82.224.75:1935/live/ahsantv/playlist.m3u8",
+  },
+  {
+    id: 0,
+    name: "TEGAR TV",
+    image:
+      "https://m3u-editor.com/storage/channel-logos/07cd9d90-3cc5-11ea-9aa8-0b5bd3ba261d/92697/14040386.jpg",
+    group: "local",
+    url: "http://36.89.47.217:11935/rrinet/live/index.m3u8",
+  },
+  {
+    id: 0,
+    name: "CARTOON NETWORK",
+    image: "",
+    group: "OTHERS",
+    url: "http://103.229.72.178/mobile/bungotv.stream.m3u8",
   },
 ]
