@@ -136,4 +136,91 @@ export const Channels: IChannel[] = [
     group: "OTHERS",
     url: "http://103.229.72.178/mobile/bungotv.stream.m3u8",
   },
+  {
+    id: 0,
+    name: "BeritaSatu",
+    image:
+      "https://m3u-editor.com/storage/channel-logos/07cd9d90-3cc5-11ea-9aa8-0b5bd3ba261d/92697/14040323.png",
+    group: "OTHERS",
+    url: "https://b1news.beritasatumedia.com/Beritasatu/B1News_1280x720.m3u8",
+  },
+  {
+    id: 0,
+    name: "TVRI",
+    image: "https://i.imgur.com/bD2odoR.png",
+    group: "tvri",
+    url: "http://103.30.1.14:8080/hls/live.m3u8",
+  },
+  {
+    id: 0,
+    name: "TVRI DKI Jakarta",
+    image: "",
+    group: "tvri",
+    url:
+      "http://wpc.d1627.nucdn.net:80/80D1627/o-tvri/Content/HLS/Live/Channel(TVRINASIONAL)/Stream(03)/index.m3u8",
+  },
+  {
+    id: 0,
+    name: "TVRI Jakarta",
+    image: "https://i.imgur.com/VH7TANA.png",
+    group: "tvri",
+    url:
+      "http://118.97.50.107/Content/HLS/Live/Channel(TVRIDKI)/Stream(03)/index.m3u8",
+  },
+  {
+    id: 0,
+    name: "TVRI Jawa Barat",
+    image: "",
+    group: "tvri",
+    url:
+      "http://wpc.d1627.nucdn.net:80/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIDKI)/Stream(03)/index.m3u8",
+  },
+  {
+    id: 0,
+    name: "TVRI Jawa Barat",
+    image: "https://i.imgur.com/tPvtrgk.png",
+    group: "tvri",
+    url:
+      "http://118.97.50.107/Content/HLS/Live/Channel(TVRIJABARBANDUNG)/index.m3u8",
+  },
+  {
+    id: 0,
+    name: "TVRI Jawa Tengah",
+    image: "",
+    group: "tvri",
+    url:
+      "http://118.97.50.107/Content/HLS/Live/Channel(TVRIJABARBANDUNG)/Stream(03)/index.m3u8",
+  },
+  {
+    id: 0,
+    name: "TVRI Jawa Timur",
+    image: "",
+    group: "tvri",
+    url:
+      "http://118.97.50.107/Content/HLS/Live/Channel(TVRIJATENGSEMARANG)/index.m3u8",
+  },
+  {
+    id: 0,
+    name: "TVRI Kanal 3",
+    image: "https://i.imgur.com/RIwYxS9.png",
+    group: "tvri",
+    url:
+      "http://118.97.50.107/Content/HLS/Live/Channel(TVRIJATIMSURABAYA)/index.m3u8",
+  },
+  {
+    id: 0,
+    name: "TVRI Nasional",
+    image: "http://tvri.go.id/assets/images/tvrilogo.png",
+    group: "tvri",
+    url:
+      "http://wpc.d1627.nucdn.net:80/80D1627/o-tvri/Content/HLS/Live/Channel(TVRI3)/Stream(03)/index.m3u8",
+  },
+  {
+    id: 0,
+    name: "TVRI Yogyakarta",
+    image: "",
+    group: "tvri",
+    url:
+      "http://118.97.50.107/Content/HLS/Live/Channel(TVRINASIONAL)/Stream(04)/index.m3u8",
+  },
 ]
