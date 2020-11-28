@@ -96,6 +96,8 @@ export const Channels: IChannel[] = [
     group: "sport",
     image:
       "https://assets.pikiran-rakyat.com/crop/160x633:554x953/x/photo/2020/09/08/2053221245.png",
+    url:
+      "https://cdn-mola-primary-01.akamaized.net/Content/HLS/Live/channel(02d97239-cf8c-abac-8549-afd56a0b3924)/08.m3u8",
   },
   {
     id: 0,
