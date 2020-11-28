@@ -91,6 +91,22 @@ export const Channels: IChannel[] = [
       "https://www.useetv.com/assets/images/channel/logo_tvri_small1.png?v=2.0.0.13",
   },
   {
+    id: 6840,
+    name: "mola tv free",
+    group: "sport",
+    image:
+      "https://assets.pikiran-rakyat.com/crop/160x633:554x953/x/photo/2020/09/08/2053221245.png",
+  },
+  {
+    id: 0,
+    name: "AREK TV SURABAYA",
+    image:
+      "https://ninmedia.tv/wp-content/uploads/2019/02/cropped-Ninmedia-Edit-183x42.png",
+    group: "local",
+    url: "http://stream2.ninmedia.tv/arektv/arek_360p/playlist.m3u8",
+  },
+
+  {
     id: 0,
     name: "jogja tv",
     group: "local",
@@ -100,118 +116,67 @@ export const Channels: IChannel[] = [
   },
   {
     id: 0,
-    name: "CNBC Indonesia",
-    image: "https://upload.wikimedia.org/wikipedia/id/3/35/CNBC_Indonesia.png",
-    group: "OTHERS",
-    url:
-      "https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/chunklist.m3u8",
-  },
-  {
-    id: 0,
-    name: "CNN Indonesia",
-    image:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/CNN_Indonesia.svg/1200px-CNN_Indonesia.svg.png",
-    group: "OTHERS",
-    url: "https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/master.m3u8",
-  },
-  {
-    id: 0,
-    name: "ANIMAL PLANET HD",
-    image: "",
-    group: "OTHERS",
-    url: "http://119.82.224.75:1935/live/ahsantv/playlist.m3u8",
-  },
-  {
-    id: 0,
     name: "TEGAR TV",
     image:
       "https://m3u-editor.com/storage/channel-logos/07cd9d90-3cc5-11ea-9aa8-0b5bd3ba261d/92697/14040386.jpg",
     group: "local",
-    url: "http://36.89.47.217:11935/rrinet/live/index.m3u8",
+    url: "http://wms.klikhost.com/tegartv/live/playlist.m3u8",
   },
-  {
-    id: 0,
-    name: "CARTOON NETWORK",
-    image: "",
-    group: "OTHERS",
-    url: "http://103.229.72.178/mobile/bungotv.stream.m3u8",
-  },
-  {
-    id: 0,
-    name: "BeritaSatu",
-    image:
-      "https://m3u-editor.com/storage/channel-logos/07cd9d90-3cc5-11ea-9aa8-0b5bd3ba261d/92697/14040323.png",
-    group: "OTHERS",
-    url: "https://b1news.beritasatumedia.com/Beritasatu/B1News_1280x720.m3u8",
-  },
-  {
-    id: 0,
-    name: "TVRI",
-    image: "https://i.imgur.com/bD2odoR.png",
-    group: "tvri",
-    url: "http://103.30.1.14:8080/hls/live.m3u8",
-  },
+
   {
     id: 0,
     name: "TVRI DKI Jakarta",
     image: "",
-    group: "tvri",
-    url:
-      "http://wpc.d1627.nucdn.net:80/80D1627/o-tvri/Content/HLS/Live/Channel(TVRINASIONAL)/Stream(03)/index.m3u8",
-  },
-  {
-    id: 0,
-    name: "TVRI Jakarta",
-    image: "https://i.imgur.com/VH7TANA.png",
-    group: "tvri",
+    group: "local",
     url:
       "http://118.97.50.107/Content/HLS/Live/Channel(TVRIDKI)/Stream(03)/index.m3u8",
   },
   {
     id: 0,
-    name: "TVRI Jawa Barat",
-    image: "",
-    group: "tvri",
+    name: "TVRI Jakarta",
+    image: "https://i.imgur.com/VH7TANA.png",
+    group: "local",
     url:
       "http://wpc.d1627.nucdn.net:80/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIDKI)/Stream(03)/index.m3u8",
   },
   {
     id: 0,
     name: "TVRI Jawa Barat",
-    image: "https://i.imgur.com/tPvtrgk.png",
-    group: "tvri",
+    image: "",
+    group: "local",
     url:
       "http://118.97.50.107/Content/HLS/Live/Channel(TVRIJABARBANDUNG)/index.m3u8",
   },
+
   {
     id: 0,
-    name: "TVRI Jawa Tengah",
-    image: "",
-    group: "tvri",
+    name: "TVRI Jawa Barat",
+    image: "https://i.imgur.com/tPvtrgk.png",
+    group: "local",
     url:
       "http://118.97.50.107/Content/HLS/Live/Channel(TVRIJABARBANDUNG)/Stream(03)/index.m3u8",
   },
   {
     id: 0,
-    name: "TVRI Jawa Timur",
+    name: "TVRI Jawa Tengah",
     image: "",
-    group: "tvri",
+    group: "local",
     url:
       "http://118.97.50.107/Content/HLS/Live/Channel(TVRIJATENGSEMARANG)/index.m3u8",
   },
   {
     id: 0,
-    name: "TVRI Kanal 3",
-    image: "https://i.imgur.com/RIwYxS9.png",
-    group: "tvri",
+    name: "TVRI Jawa Timur",
+    image: "",
+    group: "local",
     url:
       "http://118.97.50.107/Content/HLS/Live/Channel(TVRIJATIMSURABAYA)/index.m3u8",
   },
   {
     id: 0,
-    name: "TVRI Nasional",
-    image: "http://tvri.go.id/assets/images/tvrilogo.png",
-    group: "tvri",
+    name: "TVRI Kanal 3",
+    image: "https://i.imgur.com/RIwYxS9.png",
+    group: "local",
     url:
       "http://wpc.d1627.nucdn.net:80/80D1627/o-tvri/Content/HLS/Live/Channel(TVRI3)/Stream(03)/index.m3u8",
   },
@@ -219,8 +184,61 @@ export const Channels: IChannel[] = [
     id: 0,
     name: "TVRI Yogyakarta",
     image: "",
-    group: "tvri",
+    group: "local",
     url:
-      "http://118.97.50.107/Content/HLS/Live/Channel(TVRINASIONAL)/Stream(04)/index.m3u8",
+      "http://118.97.50.107/Content/HLS/Live/Channel(TVRIYOGYAKARTA)/index.m3u8",
+  },
+  {
+    id: 0,
+    name: "CNBC Indonesia",
+    image: "https://upload.wikimedia.org/wikipedia/id/3/35/CNBC_Indonesia.png",
+    group: "news",
+    url: "https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/master.m3u8",
+  },
+  {
+    id: 0,
+    name: "CNN Indonesia",
+    image:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/CNN_Indonesia.svg/1200px-CNN_Indonesia.svg.png",
+    group: "news",
+    url: "https://live.cnnindonesia.com/livecnn/smil:cnntv.smil/playlist.m3u8",
+  },
+  {
+    id: 0,
+    name: "BeritaSatu",
+    image:
+      "https://m3u-editor.com/storage/channel-logos/07cd9d90-3cc5-11ea-9aa8-0b5bd3ba261d/92697/14040323.png",
+    group: "news",
+    url: "https://b1news.beritasatumedia.com/Beritasatu/B1News_960x540.m3u8",
+  },
+  {
+    id: 0,
+    name: "Karaoke Channel",
+    image: "https://i.postimg.cc/C53XtK5f/zaltv.png",
+    group: "music",
+    url:
+      "http://edge.linknetott.swiftserve.com/live/BSgroup/amlst:karaokech/playlist.m3u8",
+  },
+  {
+    id: 0,
+    name: "Music Top",
+    image: "",
+    group: "music",
+    url:
+      "https://live-edge01.telecentro.net.ar/live/smil:musictop.smil/playlist.m3u8",
+  },
+  {
+    id: 0,
+    name: "Radio 51 TV",
+    image: "Logo N/A",
+    group: "music",
+    url: "https://59d7d6f47d7fc.streamlock.net/canale51/canale51/playlist.m3u8",
+  },
+  {
+    id: 0,
+    name: "RRI Net",
+    image: "https://pbs.twimg.com/media/DmaMDCBU8AAfd45.png",
+    group: "music",
+    url: "http://36.89.47.217:11935/rrinet/live/index.m3u8",
   },
 ]
