@@ -101,15 +101,6 @@ export const Channels: IChannel[] = [
   },
   {
     id: 0,
-    name: "AREK TV SURABAYA",
-    image:
-      "https://ninmedia.tv/wp-content/uploads/2019/02/cropped-Ninmedia-Edit-183x42.png",
-    group: "local",
-    url: "http://stream2.ninmedia.tv/arektv/arek_360p/playlist.m3u8",
-  },
-
-  {
-    id: 0,
     name: "jogja tv",
     group: "local",
     image:
