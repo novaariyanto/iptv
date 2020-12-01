@@ -1,4 +1,3 @@
-import "video-react/dist/video-react.css"
 import { AppProps } from "next/app"
 
 function MyApp(Props: AppProps) {
