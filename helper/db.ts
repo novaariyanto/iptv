@@ -12,7 +12,9 @@ export interface IChannel {
 }
 
 export const Channels = async () => {
-  const r = await fetch(baseUrl + "/db.csv").then((r) => r.text())
+  const url = "https://" + baseUrl + "/db.csv"
+  console.log(url)
+  const r = await fetch(url).then((r) => r.text())
   const data = r.replace(/[\u200B-\u200D\uFEFF]/g, "")
   const result: IChannel[] = await neatCsv(data)
   return result
