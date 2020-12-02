@@ -4,7 +4,7 @@ Api menyediakan playlist tv indonesia.
 
 ## URL Playlist
 ```
-https://iptv.mwafa.vercel.app/api/playlist
+https://iptv.mwafa.vercel.app/api/playlist.m3u
 ```
 ---
 Cara Menggunakan:
