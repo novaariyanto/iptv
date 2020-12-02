@@ -1,6 +1,6 @@
 import neatCsv from "neat-csv"
-import { useRouter } from "next/dist/client/router"
 import fetch from "node-fetch"
+const baseUrl = process.env.VERCEL_URL || "http://localhost:4000"
 
 export interface IChannel {
   name: string
@@ -12,8 +12,7 @@ export interface IChannel {
 }
 
 export const Channels = async () => {
-  // const r = await fetch("http://localhost:4000/db.csv").then((r) => r.text())
-  const r = await fetch(useRouter().locale + "/db.csv").then((r) => r.text())
+  const r = await fetch(baseUrl + "/db.csv").then((r) => r.text())
   const data = r.replace(/[\u200B-\u200D\uFEFF]/g, "")
   const result: IChannel[] = await neatCsv(data)
   return result
