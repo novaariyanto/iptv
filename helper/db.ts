@@ -9,6 +9,7 @@ export interface IChannel {
   vidio_id: number
   url?: string
   yt_id?: string
+  zte?: boolean
 }
 
 export const Channels = async () => {
