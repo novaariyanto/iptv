@@ -4,10 +4,13 @@ import { Channels } from "../../helper/db"
 export default async (_: NextApiRequest, res: NextApiResponse) => {
   try {
     res.write("#EXTM3U\n")
-    Channels.forEach((ch) => {
-      const { id, image, group, name, url } = ch
+    const channels = await Channels()
+    channels.forEach((ch) => {
+      const { vidio_id, image, group, name, url, yt_id } = ch
       const baseUrl = process.env.BASE_URL || ""
-      const streamUrl = url ? url : baseUrl + "/api/play?id=" + id
+      let streamUrl = url ? url : baseUrl + "/api/vidio?id=" + vidio_id
+      streamUrl = yt_id ? "/api/yt?id=" + yt_id : streamUrl
+
       res.write(
         `#EXTINF:-1 tvg-logo=\"${image}\" group-title=\"${group}\", ${name.toUpperCase()}\n`
       )
