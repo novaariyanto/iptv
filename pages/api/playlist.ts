@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next"
 import { Channels } from "../../helper/db"
+import { baseURL } from "../../helper/var"
 
 export default async (_: NextApiRequest, res: NextApiResponse) => {
   try {
@@ -7,10 +8,9 @@ export default async (_: NextApiRequest, res: NextApiResponse) => {
     const channels = await Channels()
     channels.forEach((ch) => {
       const { vidio_id, image, group, name, url, yt_id } = ch
-      const baseUrl = "https://" + process.env.VERCEL_URL || ""
 
-      let streamUrl = url ? url : baseUrl + "/api/vidio?id=" + vidio_id
-      streamUrl = yt_id ? baseUrl + "/api/yt?id=" + yt_id : streamUrl
+      let streamUrl = url ? url : baseURL() + "/api/vidio?id=" + vidio_id
+      streamUrl = yt_id ? baseURL() + "/api/yt?id=" + yt_id : streamUrl
 
       res.write(
         `#EXTINF:-1 tvg-logo=\"${image}\" group-title=\"${group}\", ${name.toUpperCase()}\n`
