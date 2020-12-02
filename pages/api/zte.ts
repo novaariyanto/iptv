@@ -21,8 +21,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       return currentPath + encodeURIComponent(s)
     })
     .replace(/.+(ts)\?.+/gm, (s) => {
-      return s
+      return decodeURIComponent(remotePath) + s
     })
   res.write(newData)
-  res.end(url)
+  res.end()
 }
