@@ -12,12 +12,10 @@ import {
   useToast,
 } from "@chakra-ui/react"
 
-import { baseURL } from "../helper/var"
-
 export const Hero: React.FC = () => {
   const urlRef = useRef<HTMLInputElement>()
   const toast = useToast()
-  const url = baseURL() + "/api/playlist.m3u"
+  const url = "https://iptv.mwafa.net/api/playlist.m3u"
 
   function clickHandle() {
     const copyText = urlRef.current
