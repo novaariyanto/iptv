@@ -1,4 +1,5 @@
 import Head from "next/head"
+import fetch from "node-fetch"
 import { useEffect, useState } from "react"
 import GithubCorner from "react-github-corner"
 
@@ -6,13 +7,15 @@ import { Box } from "@chakra-ui/react"
 
 import { ChannelList } from "../components/ChannelList"
 import { Hero } from "../components/Hero"
-import { Channels, IChannel } from "../helper/db"
+import { IChannel } from "../helper/db"
 
 const Index = () => {
   const [channels, setChannels] = useState<IChannel[]>([])
 
   useEffect(() => {
-    Channels().then((c) => setChannels(c))
+    fetch("/api/all")
+      .then((r) => r.json())
+      .then((c) => setChannels(c))
   }, [])
 
   return (
