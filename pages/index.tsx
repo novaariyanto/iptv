@@ -1,4 +1,6 @@
+import Head from "next/head"
 import { useEffect, useState } from "react"
+import GithubCorner from "react-github-corner"
 
 import { Box } from "@chakra-ui/react"
 
@@ -15,8 +17,12 @@ const Index = () => {
 
   return (
     <Box>
+      <Head>
+        <title>IPTV Playlist Indonesia</title>
+      </Head>
       <Hero />
       <ChannelList channels={channels} />
+      <GithubCorner href="https://github.com/mwafa/iptv" />
     </Box>
   )
 }
