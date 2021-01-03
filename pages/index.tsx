@@ -15,7 +15,7 @@ const Index = () => {
   useEffect(() => {
     fetch("/api/all")
       .then((r) => r.json())
-      .then((c) => setChannels(c))
+      .then((c) => setChannels(c.data))
   }, [])
 
   return (
