@@ -9,10 +9,11 @@ export default async (_: NextApiRequest, res: NextApiResponse) => {
     const channels = await Channels()
     channels.forEach((ch) => {
       const { vidio_id, image, group, name, url, dm } = ch
-      let streamUrl
-      if (url) streamUrl = url
-      if (vidio_id) streamUrl = baseURL() + "/api/vidio?id=" + vidio_id
-      if (dm) streamUrl = baseURL() + "/api/dm?id=" + dm
+      let streamUrl = (() => {
+        if (url) return url
+        if (dm) return baseURL() + "/api/dm?id=" + dm
+        return baseURL() + "/api/vidio?id=" + vidio_id
+      })()
 
       res.write(
         `#EXTINF:-1 tvg-logo=\"${image}\" group-title=\"${group}\", ${name.toUpperCase()}\n`
