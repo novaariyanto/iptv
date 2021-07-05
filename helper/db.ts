@@ -1,6 +1,6 @@
-import neatCsv from "neat-csv"
-import fetch from "node-fetch"
 import { baseURL } from "./var"
+import fetch from "node-fetch"
+import neatCsv from "neat-csv"
 
 export interface IChannel {
   name: string
@@ -8,8 +8,7 @@ export interface IChannel {
   group: string
   vidio_id: number
   url?: string
-  yt_id?: string
-  zte?: boolean
+  dm: string
 }
 
 export const Channels = async () => {

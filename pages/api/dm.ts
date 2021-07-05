@@ -1,16 +1,15 @@
 import { NextApiRequest, NextApiResponse } from "next"
 
 import fetch from "node-fetch"
-import { urlGen } from "../../helper/urlGenerator"
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     const { id } = req.query
-    const url = await urlGen(id.toString())
+    const url = "https://www.dailymotion.com/player/metadata/video/" + id
     await fetch(url)
-      .then((r) => r.text())
+      .then((r) => r.json())
       .then((r) => {
-        res.end(r)
+        res.end(r.qualities.auto[0].url)
       })
     res.end()
   } catch (e) {
