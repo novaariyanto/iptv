@@ -19,5 +19,6 @@ https://saweria.co/mwafa
 Catatan:
 > 1. Semua video berasal dari pihak luar dan legalitas penggunaan menjadi tanggung jawab anda sebagai pengguna.
 > 2. Laporkan saran dan kendala melalui tab issues.
+> 3. Sering terputus saat menonton? ini karena limit dari server vercel. Kamu bisa jalankan sendiri server di lokal komputer, coba cek https://github.com/mwafa/iptv-id
 
 ---
